@@ -1,2 +1,0 @@
-# Mern
-Mern stack project
