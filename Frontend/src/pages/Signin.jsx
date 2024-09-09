@@ -49,7 +49,7 @@ dispatch(signInFailure(error.message));
     <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>Henok</span>
     blog
     </Link>
-    <p classname='text-sm mt-5'>
+    <p classname='text-sm mt-10 gap-5'>
       This is a demo project.
     </p>
 </div>
@@ -57,11 +57,11 @@ dispatch(signInFailure(error.message));
 <div classname='flex-1'>
 <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
 
-<div className=''>
+<div>
 <Label value='Your Email'/>
 <TextInput type='email'
 placeholder='Email'
-id='email' onChange={handleChange}/>
+id='email' onChange={handleChange} />
 
 </div>
 
