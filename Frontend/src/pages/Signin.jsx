@@ -15,7 +15,7 @@ setFormData({...formData,[e.target.id]:e.target.value.trim()})
 const handleSubmit=async(e)=>{
   e.preventDefault();
   if ( !formData.email || !formData.password) {
-    return dispatch(signinFailure('Please fill all the fields'));
+    return dispatch(signInFailure('Please fill all the fields'));
   }
 try{
  dispatch(signInStart());
@@ -28,7 +28,7 @@ const res=await fetch('/api/auth/signin',{
 })
 const data=await res.json();
 if (data.success===false){
-dispatch(signinFailure(data.message));
+dispatch(signInFailure(data.message));
 }
 
 if(res.ok){
